@@ -26,16 +26,15 @@ def count(number):
 def math(num1, operation, num2):
     a = int(num1)
     b = int(num2)
-    match operation:
-        case '+':
-            return f'{a + b}' 
-        case '-':
-            return f'{a - b}'
-        case '*':
-            return f'{a * b}'
-        case 'div':
-            return f'{a / b}'
-        case '%':
-            return f'{a % b}'
-        case _:
-            return "Unknown operand!"
+    if operation == '+':
+        return f'{a + b}'
+    elif operation == '-':
+        return f'{a - b}'
+    elif operation == '*':
+        return f'{a * b}'
+    elif operation == 'div':
+        return f'{a / b}'
+    elif operation == '%':
+        return f'{a % b}'
+    else:
+        return 'Unknown operand!'
